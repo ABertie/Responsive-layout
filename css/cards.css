@@ -1,0 +1,92 @@
+/* ARTICELS */
+
+.articles{
+    --color-bg: var(--mid-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: max(2rem, 10vh) var(--margin-large);
+    background: var(--color-bg);
+}
+
+.cardsHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: max(10vw,.5rem);
+
+    width: 50%;
+    padding: max(2vw,.5rem);
+}
+
+/* Cards */
+
+.cards{
+    display: flex;
+    gap: 2rem;
+}
+
+/* Card */
+.card{
+    --color-bg: var(--light-color);
+
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 70vh;
+    background: var(--color-bg);
+    box-shadow: 0 3px 10px 5px rgb(60 60 60 /0.3);
+}
+
+.card img{
+    height: 50%;
+}
+
+/* ABOUT */
+.about{
+    --color-bg: var(--light-color);
+
+    display: flex;
+
+    height: 80vh;
+    background: var(--color-bg);
+}
+
+.about article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding: 2rem max(1rem, 8vw);
+}
+
+/* SUBSCRIBE */
+.subscribe{
+    --color-bg: var(--brand-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 60vh;
+    padding: 0 .5rem;
+    background: var(--color-bg);
+}
+
+.subscribe h2{
+    padding: .5rem;
+}
+
+.subscribe h2::after{
+    display: none;
+}

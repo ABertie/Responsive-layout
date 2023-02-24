@@ -1,0 +1,109 @@
+@media(max-width:600px){
+    header nav input{
+        position: absolute;
+        top: 1.2rem;
+        right: 1.5rem;
+        z-index: 5;
+
+        display: block;
+
+        width: 3rem;
+        height: 3rem;
+        padding: 2rem;
+        opacity: 0;
+    }
+
+    header nav .burger{
+        position: relative;
+        top: 0;
+        right: .5rem;
+        z-index: 4;
+
+        width: 100%;
+        height: 3rem;
+        padding: 1rem .25rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    header nav .burger > div{
+        position: relative;
+
+        width: 2.5rem;
+        height: 4px;
+        background-color: var(--color-t);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        transition: all 0.4s ease;
+    }
+
+    header nav .burger > div::before,
+    header nav .burger > div::after{
+        content: '';
+
+        position: absolute;
+        top: 0.8rem;
+
+        width: inherit;
+        height: inherit;
+        background: inherit;
+    }
+
+    header nav .burger > div::after{
+        top: -.8rem;
+    }
+
+    header nav input:checked + .burger >div{
+        transform: rotate(135deg);
+    }
+
+    header nav input:checked + .burger >div::before, 
+    header nav input:checked + .burger >div::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    header nav input:checked ~ ul{
+        visibility: visible;
+    }
+
+    header nav ul {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        padding: 35vh 1rem;
+        background-color: var(--color-bg);
+        box-shadow: 0 5px 10px 3px rgba(60, 60, 60, 0.1);
+        width: 70vw;
+        height: 100%;
+        
+        visibility: hidden;
+        
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:1000px) {
+    .cards, .about, footer nav ul{
+        flex-direction: column;
+    }
+
+    .about{
+        height: auto;
+    }
+
+    .about img{
+        height: 33vh;
+    }
+
+    footer{
+        flex-direction: column-reverse;
+    }
+}

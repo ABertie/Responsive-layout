@@ -1,0 +1,32 @@
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 3rem;
+}
+
+footer *{
+    display: inherit;
+    flex-wrap: inherit;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer a{
+    margin: 1rem;
+}
+
+footer figure a{
+    padding: .5rem;
+    border-radius: 50%;
+    background: var(--color-t);
+    margin: .5rem;
+}
+
+footer a i{
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: x-large;
+}
